@@ -2,6 +2,14 @@
   font-family: sans-serif;
 }
 
+body {
+  padding-bottom: 0 !important;
+}
+
+#root {
+  background: #FaFaFa;
+}
+
 .App {
   text-align: center;
 }

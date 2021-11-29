@@ -21,7 +21,7 @@ const Pricing = () => {
             <div className="card card2 mb-4 rounded-3 shadow-sm p-3 text-center" style={{ display: 'inline-block' }}>
               <div className="card-header" style={{ backgroundColor: 'white', borderBottom: 'none' }}>
                 <h4 className="my-0 fw-normal">Free</h4>
-                <h5>Organize across all
+                <h5 className="h5-pricing">Organize across all
                   apps by hand</h5>
               </div>
               <div className="card-body">
@@ -45,7 +45,7 @@ const Pricing = () => {
             <div className="card card2 mb-4 rounded-3 shadow-sm p-3 text-center" style={{ display: 'inline-block' }} id="best-sale" >
               <div className="card-header" style={{ borderBottom: 'none' }}>
                 <h4 className="my-0 fw-normal" >Standard</h4>
-                <h5>Organize across all
+                <h5 className="h5-pricing">Organize across all
                   apps by hand</h5>
               </div>
               <div className="card-body">
@@ -68,7 +68,7 @@ const Pricing = () => {
             <div className="card card2 mb-4 rounded-3 shadow-sm p-3 text-center" style={{ display: 'inline-block' }}>
               <div className="card-header" style={{ backgroundColor: 'white', borderBottom: 'none' }}>
                 <h4 className="my-0 fw-normal">Premium</h4>
-                <h5>Organize across all
+                <h5 className="h5-pricing">Organize across all
                   apps by hand</h5>
               </div>
               <div className="card-body">

@@ -8,6 +8,7 @@ import Card from './components/Card';
 import Pricing from './components/Pricing';
 import { Form } from './components/Form';
 import { ContactUs } from './components/ContactUs';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ lazy dog"/>
       <Pricing />
       <Form />
       <ContactUs />
+      <Footer />
     </>
   );
 }
