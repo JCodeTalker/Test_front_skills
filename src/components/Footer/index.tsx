@@ -2,12 +2,13 @@ import './styles.scss'
 import tel from '../../assets/telephone.svg'
 import addr from '../../assets/address.svg'
 import email from '../../assets/email.svg'
-import faceb from '../../assets/social_media/facebook.svg'
-import insta from '../../assets/social_media/instagram.svg'
-import twitt from '../../assets/social_media/twitter.svg'
+import useTextPositionConfig from '../../hooks/useTextPositionConfig'
 
 
 export function Footer() {
+
+  const textPosition = useTextPositionConfig()
+
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
@@ -32,52 +33,52 @@ export function Footer() {
         <div className="container-md">
           <footer className="py-5" id="footer">
             <div className="row">
-              <div className="col-2">
-                <h5 className="h5-footer">Company info</h5>
+              <div className="col-md-2">
+                <h5 className={`h5-footer ${textPosition}`}>Company info</h5>
                 <ul className="nav flex-column">
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About Us</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Carrier</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">We are hiring</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Blog</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>About Us</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Carrier</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>We are hiring</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Blog</a></li>
                 </ul>
               </div>
 
-              <div className="col-2">
-                <h5 className="h5-footer">Legal</h5>
+              <div className="col-md-2">
+                <h5 className={`h5-footer ${textPosition}`}>Legal</h5>
                 <ul className="nav flex-column">
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About Us</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Carrier</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">We are hiring</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Blog</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>About Us</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Carrier</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>We are hiring</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Blog</a></li>
                 </ul>
               </div>
 
-              <div className="col-2">
-                <h5 className="h5-footer">Section</h5>
+              <div className="col-md-2">
+                <h5 className={`h5-footer ${textPosition}`}>Section</h5>
                 <ul className="nav flex-column">
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Business Marketing</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">User Analytic</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Live Chat</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Unlimited Support</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Business Marketing</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>User Analytic</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Live Chat</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Unlimited Support</a></li>
                 </ul>
               </div>
 
-              <div className="col-2">
-                <h5 className="h5-footer">Resources</h5>
+              <div className="col-md-2">
+                <h5 className={`h5-footer ${textPosition}`}>Resources</h5>
                 <ul className="nav flex-column">
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">IOS &amp; Android</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Watch a Demo</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Customers</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">API</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>IOS &amp; Android</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Watch a Demo</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>Customers</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted ${textPosition}`}>API</a></li>
                 </ul>
               </div>
 
-              <div className="col-2">
-                <h5 className="h5-footer">Get In Touch</h5>
+              <div className="col-md-2">
+                <h5 className={`h5-footer ${textPosition}`}>Get In Touch</h5>
                 <ul className="nav flex-column">
-                  <li className="nav-item mb-2"> <a href="#" className="nav-link p-0 text-muted text-nowrap">  <img src={tel} alt="" /> (480) 555-0103</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted text-nowrap">  <img src={addr} alt="" /> 4517 Washington Ave.</a></li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted text-nowrap">  <img src={email} alt="" /> debra.holt@example.com</a></li>
+                  <li className="nav-item mb-2"> <a href="#" className={`nav-link p-0 text-muted text-nowrap ${textPosition}`}>  <img src={tel} alt="" /> (480) 555-0103</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted text-nowrap ${textPosition}`}>  <img src={addr} alt="" /> 4517 Washington Ave.</a></li>
+                  <li className="nav-item mb-2"><a href="#" className={`nav-link p-0 text-muted text-nowrap ${textPosition}`}>  <img src={email} alt="" /> debra.holt@example.com</a></li>
                 </ul>
               </div>
 

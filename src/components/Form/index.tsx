@@ -1,11 +1,25 @@
 import './styles.scss'
 import apppointment from '../../assets/appointment.svg'
 import countries from '../../assets/countries.svg'
+import useWindowDimension from '../../hooks/useWindowDimension'
+import { useEffect, useState } from 'react'
 
 export function Form() {
+
+  const { height, width } = useWindowDimension()
+  const [visibility, setVisibility] = useState('')
+
+  useEffect(() => {
+    if (width <= 768) {
+      setVisibility('none')
+    } else {
+      setVisibility('block')
+    }
+  }, [width])
+
   return (
     <>
-      <div className="container-fluid" id="bg">
+      <div className="container-fluid" id="bg" style={{ display: `${visibility}` }} >
         <div className="container">
           <div className="row py-5">
             <div className="col me-5 my-3" id="branch-world-text">

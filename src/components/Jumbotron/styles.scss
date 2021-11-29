@@ -1,0 +1,25 @@
+#header2 {
+  background-image: url('../../assets/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+#card-container {
+  margin-top: 60px;
+}
+
+.main-content {
+  color: white;
+  * {
+    font-family: sans-serif;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  h4 {
+    color: white;
+    margin-top: 20px;
+  }
+}
