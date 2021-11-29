@@ -13,24 +13,7 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <>
-      {/* <Header /> */}
       <Jumbotron />
-      {/* <div className="container">
-        <div className="row">
-          <div className="col-md-4 centralize-children" >
-            <Card title="Peace of Mind" paragraph="the quick fox jumps over the 
-lazy dog" />
-          </div>
-          <div className="col-md-4 centralize-children">
-            <Card title="Set For Life" paragraph="the quick fox jumps over the 
-lazy dog"/>
-          </div>
-          <div className="col-md-4 centralize-children">
-            <Card title="100% Satisfaction" paragraph="the quick fox jumps over the 
-lazy dog"/>
-          </div>
-        </div>
-      </div> */}
       <Pricing />
       <Form />
       <ContactUs />

@@ -67,7 +67,7 @@ export function Form() {
                         <div className="mb-3">
                           <label htmlFor="departm">Department *</label>
                           <select className="form-select" aria-label="Default select example" id="departm">
-                            <option selected>Please select</option>
+                            <option value="0">Please select</option>
                             <option value="1">Department A</option>
                             <option value="2">Department B</option>
                             <option value="3">Department C</option>
@@ -76,7 +76,7 @@ export function Form() {
                         <div className="mb-3">
                           <label htmlFor="time">Time *</label>
                           <select className="form-select" aria-label="Default select example" id="time">
-                            <option selected>4:00 available</option>
+                            <option value="0">4:00 available</option>
                             <option value="1">5:00 available</option>
                             <option value="2">6:00 available</option>
                           </select>
